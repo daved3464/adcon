@@ -1,0 +1,5 @@
+Santiago Brand/123456/Sabra/12345/true
+Maria Mira/654321/Mami/1234/false
+Diana Mira/789098/Dimi/345/false
+David Brand/145632/Dabra/555666/true
+David Chamorro/1234197101/david.chamorro/advanced2.0/true
