@@ -30,16 +30,15 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         LoginWindow = new javax.swing.JPanel();
-        tbContraseña = new javax.swing.JPasswordField();
-        btIngresar = new javax.swing.JButton();
-        btCancelarLogin = new javax.swing.JButton();
-        PassLabel = new javax.swing.JLabel();
+        PasswordText = new javax.swing.JPasswordField();
+        LoginButton = new javax.swing.JButton();
+        CloseButton = new javax.swing.JButton();
+        PasswordLabel = new javax.swing.JLabel();
         UsernameLabel = new javax.swing.JLabel();
         TitleLabel = new javax.swing.JLabel();
-        tbUsuario = new javax.swing.JTextField();
+        UsernameText = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(367, 246));
         setMinimumSize(new java.awt.Dimension(367, 246));
         setResizable(false);
 
@@ -47,36 +46,36 @@ public class Login extends javax.swing.JFrame {
         LoginWindow.setMaximumSize(new java.awt.Dimension(394, 250));
         LoginWindow.setMinimumSize(new java.awt.Dimension(394, 250));
 
-        tbContraseña.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        tbContraseña.addKeyListener(new java.awt.event.KeyAdapter() {
+        PasswordText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        PasswordText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                tbContraseñaKeyPressed(evt);
+                PasswordTextKeyPressed(evt);
             }
         });
 
-        btIngresar.setBackground(new java.awt.Color(51, 153, 255));
-        btIngresar.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        btIngresar.setForeground(new java.awt.Color(204, 204, 255));
-        btIngresar.setText("INGRESAR");
-        btIngresar.addActionListener(new java.awt.event.ActionListener() {
+        LoginButton.setBackground(new java.awt.Color(51, 153, 255));
+        LoginButton.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        LoginButton.setForeground(new java.awt.Color(204, 204, 255));
+        LoginButton.setText("INGRESAR");
+        LoginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btIngresarActionPerformed(evt);
+                LoginButtonActionPerformed(evt);
             }
         });
 
-        btCancelarLogin.setBackground(new java.awt.Color(51, 153, 255));
-        btCancelarLogin.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        btCancelarLogin.setForeground(new java.awt.Color(204, 204, 255));
-        btCancelarLogin.setText("CANCELAR");
-        btCancelarLogin.addActionListener(new java.awt.event.ActionListener() {
+        CloseButton.setBackground(new java.awt.Color(51, 153, 255));
+        CloseButton.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        CloseButton.setForeground(new java.awt.Color(204, 204, 255));
+        CloseButton.setText("CANCELAR");
+        CloseButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCancelarLoginActionPerformed(evt);
+                CloseButtonActionPerformed(evt);
             }
         });
 
-        PassLabel.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        PassLabel.setForeground(new java.awt.Color(255, 255, 255));
-        PassLabel.setText("CONSTRASEÑA:");
+        PasswordLabel.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        PasswordLabel.setForeground(new java.awt.Color(255, 255, 255));
+        PasswordLabel.setText("CONSTRASEÑA:");
 
         UsernameLabel.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         UsernameLabel.setForeground(new java.awt.Color(255, 255, 255));
@@ -87,7 +86,7 @@ public class Login extends javax.swing.JFrame {
         TitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TitleLabel.setText("ADCON");
 
-        tbUsuario.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        UsernameText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout LoginWindowLayout = new javax.swing.GroupLayout(LoginWindow);
         LoginWindow.setLayout(LoginWindowLayout);
@@ -96,15 +95,15 @@ public class Login extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LoginWindowLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(LoginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PassLabel)
+                    .addComponent(PasswordLabel)
                     .addComponent(UsernameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btIngresar))
+                    .addComponent(LoginButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(LoginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tbUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(UsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(LoginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btCancelarLogin)
-                        .addComponent(tbContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(CloseButton)
+                        .addComponent(PasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(38, 38, 38))
             .addComponent(TitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -115,16 +114,16 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(TitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(LoginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tbUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(UsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(UsernameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(LoginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PassLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tbContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(PasswordLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(LoginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btCancelarLogin)
-                    .addComponent(btIngresar))
+                    .addComponent(CloseButton)
+                    .addComponent(LoginButton))
                 .addGap(37, 37, 37))
         );
 
@@ -142,20 +141,20 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     //<editor-fold desc="Otros métodos">
-    private void btCancelarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarLoginActionPerformed
+    private void CloseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseButtonActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_btCancelarLoginActionPerformed
+    }//GEN-LAST:event_CloseButtonActionPerformed
 
-    private void btIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIngresarActionPerformed
+    private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
       
         LoginMethod();                       
-    }//GEN-LAST:event_btIngresarActionPerformed
+    }//GEN-LAST:event_LoginButtonActionPerformed
 
-    private void tbContraseñaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tbContraseñaKeyPressed
+    private void PasswordTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PasswordTextKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             LoginMethod();
         }
-    }//GEN-LAST:event_tbContraseñaKeyPressed
+    }//GEN-LAST:event_PasswordTextKeyPressed
 //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="Main Method">
     public static void main(String args[]) {
@@ -239,8 +238,8 @@ private void LoginMethod()
 {           
             int notfoundcounter = 0;
             String userfound = "";           
-            String usuario = tbUsuario.getText();
-            String contraseña = tbContraseña.getText();
+            String usuario = UsernameText.getText();
+            String contraseña = PasswordText.getText();
             
             do{
                 for (Usuario requser : Residentes) {
@@ -265,7 +264,7 @@ private void LoginMethod()
             while(notfoundcounter < Residentes.size());
             
 
-                    if (adminuser.equals(tbUsuario.getText()) && adminpass.equals(tbContraseña.getText())) {
+                    if (adminuser.equals(UsernameText.getText()) && adminpass.equals(PasswordText.getText())) {
                         this.admin.setVisible(true);
                         this.setVisible(false);
                         
@@ -278,13 +277,13 @@ private void LoginMethod()
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CloseButton;
+    private javax.swing.JButton LoginButton;
     private javax.swing.JPanel LoginWindow;
-    private javax.swing.JLabel PassLabel;
+    private javax.swing.JLabel PasswordLabel;
+    private javax.swing.JPasswordField PasswordText;
     private javax.swing.JLabel TitleLabel;
     private javax.swing.JLabel UsernameLabel;
-    private javax.swing.JButton btCancelarLogin;
-    private javax.swing.JButton btIngresar;
-    private javax.swing.JPasswordField tbContraseña;
-    private javax.swing.JTextField tbUsuario;
+    private javax.swing.JTextField UsernameText;
     // End of variables declaration//GEN-END:variables
 }

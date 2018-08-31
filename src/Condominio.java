@@ -33,9 +33,9 @@ public class Condominio extends javax.swing.JFrame {
         Residentes = residentes;
         Areas_Comunes = new ArrayList();
         ListaResidentes = new ArrayList();        
-        ListaResidentes.add(RA_ResCB);
-        ListaResidentes.add(CA_AV_ResCB);
-        ListaResidentes.add(CA_ASV_ResCB);
+        ListaResidentes.add(AC_ResidentList);
+        ListaResidentes.add(AV_ResidentList);
+        ListaResidentes.add(AsV_ResidentList);
         for(JComboBox jcb: ListaResidentes){
             initListasResidentes(jcb);
         }
@@ -47,59 +47,66 @@ public class Condominio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        grupo_botones = new javax.swing.ButtonGroup();
         CondControls = new javax.swing.JTabbedPane();
         ResAdmin = new javax.swing.JPanel();
         Añadir_Residente = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        AR_fullnameTB = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        AR_idTB = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        AR_passwordTB = new javax.swing.JPasswordField();
-        jLabel6 = new javax.swing.JLabel();
-        AR_usernameTB = new javax.swing.JTextField();
-        AR_addResBT = new javax.swing.JButton();
-        limpiarResidente = new javax.swing.JButton();
+        AR_NameLabel = new javax.swing.JLabel();
+        AR_NameText = new javax.swing.JTextField();
+        AR_IDLabel = new javax.swing.JLabel();
+        AR_IDText = new javax.swing.JTextField();
+        AR_PasswordLabel = new javax.swing.JLabel();
+        AR_PasswordText = new javax.swing.JPasswordField();
+        AR_UsernameLabel = new javax.swing.JLabel();
+        AR_UsernameText = new javax.swing.JTextField();
+        AR_AddUserButton = new javax.swing.JButton();
+        AR_CleanButton = new javax.swing.JButton();
         Añadir_Cuotas = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        RA_ResCB = new javax.swing.JComboBox<>();
-        RA_ViviendaCB = new javax.swing.JComboBox<>();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        addCuota = new javax.swing.JButton();
-        jLabel17 = new javax.swing.JLabel();
-        AR_ACDateField = new javax.swing.JFormattedTextField();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        AR_slowpayerTA = new javax.swing.JTextArea();
+        AC_ResidentLabel = new javax.swing.JLabel();
+        AC_ResidentList = new javax.swing.JComboBox<>();
+        AC_HomeList = new javax.swing.JComboBox<>();
+        AC_HomeLabel = new javax.swing.JLabel();
+        AC_QuotaValueLabel = new javax.swing.JLabel();
+        AC_QuotaValueText = new javax.swing.JTextField();
+        AC_QuotaAddButton = new javax.swing.JButton();
+        AC_QuotaDateLabel = new javax.swing.JLabel();
+        AC_QuotaDateText = new javax.swing.JFormattedTextField();
+        SlowPayerScroller = new javax.swing.JScrollPane();
+        SlowPayerTextArea = new javax.swing.JTextArea();
         CondAdmin = new javax.swing.JPanel();
         Añadir_ÁreaComún = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        txtArea = new javax.swing.JTextField();
-        CA_AddAreaBT = new javax.swing.JButton();
+        AAC_AddCommonAreaLabel = new javax.swing.JLabel();
+        AAC_AddCommonAreaText = new javax.swing.JTextField();
+        AAC_AddCommonAreaBT = new javax.swing.JButton();
         Añadir_Vivienda = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        CA_numViviendaTB = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        CA_HouseTypeCB = new javax.swing.JComboBox<>();
-        jLabel10 = new javax.swing.JLabel();
-        CA_RecargoTB = new javax.swing.JTextField();
-        CA_Add_ViviendaBT = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        CA_VrCuotaTB = new javax.swing.JTextField();
-        CA_AV_ResCB = new javax.swing.JComboBox<>();
+        AV_HomeIDLabel = new javax.swing.JLabel();
+        AV_HomeIDText = new javax.swing.JTextField();
+        AV_HomeTypeLabel = new javax.swing.JLabel();
+        AV_HomeTypeList = new javax.swing.JComboBox<>();
+        AV_SlowpayerChargeLabel = new javax.swing.JLabel();
+        AV_SlowpayerChargeText = new javax.swing.JTextField();
+        AV_AddHomeButton = new javax.swing.JButton();
+        AV_ResidentLabel = new javax.swing.JLabel();
+        AV_QuotaValueLabel = new javax.swing.JLabel();
+        AV_QuotaValueText = new javax.swing.JTextField();
+        AV_ResidentList = new javax.swing.JComboBox<>();
         Asignar_Vivienda = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        CA_ASV_ResCB = new javax.swing.JComboBox<>();
-        jLabel12 = new javax.swing.JLabel();
-        CA_ASV_ViviendaCB = new javax.swing.JComboBox<>();
+        AsV_ResidentLabel = new javax.swing.JLabel();
+        AsV_ResidentList = new javax.swing.JComboBox<>();
+        AsV_HomeLabel = new javax.swing.JLabel();
+        AsV_HomeList = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        AsV_QuotaValueText = new javax.swing.JTextField();
+        AsV_QuotaValueLabel = new javax.swing.JLabel();
+        AvailableHomeScroller = new javax.swing.JScrollPane();
+        AvailableHomeList = new javax.swing.JList<>();
+        AvailableAreaScroller = new javax.swing.JScrollPane();
+        AvailableAreaList = new javax.swing.JList<>();
+        Cambiar_DatosAcceso = new javax.swing.JPanel();
+        CDA_NewUsernameLabel = new javax.swing.JLabel();
+        CDA_NewPasswordLabel = new javax.swing.JLabel();
+        CDA_NewUsernameText = new javax.swing.JTextField();
+        CDA_NewPasswordText = new javax.swing.JTextField();
+        CDA_ChangeAccessDataButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(785, 451));
@@ -110,27 +117,27 @@ public class Condominio extends javax.swing.JFrame {
 
         Añadir_Residente.setBorder(javax.swing.BorderFactory.createTitledBorder("Añadir Residente"));
 
-        jLabel2.setText("Nombre Completo:");
+        AR_NameLabel.setText("Nombre Completo:");
 
-        jLabel5.setText("Número de Cédula:");
+        AR_IDLabel.setText("Número de Cédula:");
 
-        jLabel7.setText("Contraseña:");
+        AR_PasswordLabel.setText("Contraseña:");
 
-        jLabel6.setText("Nombre de Usuario:");
+        AR_UsernameLabel.setText("Nombre de Usuario:");
 
-        AR_addResBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
-        AR_addResBT.setText("Agregar");
-        AR_addResBT.addActionListener(new java.awt.event.ActionListener() {
+        AR_AddUserButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
+        AR_AddUserButton.setText("Agregar");
+        AR_AddUserButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AR_addResBTActionPerformed(evt);
+                AR_AddUserButtonActionPerformed(evt);
             }
         });
 
-        limpiarResidente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/broom.png"))); // NOI18N
-        limpiarResidente.setText("Limpiar");
-        limpiarResidente.addActionListener(new java.awt.event.ActionListener() {
+        AR_CleanButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/broom.png"))); // NOI18N
+        AR_CleanButton.setText("Limpiar");
+        AR_CleanButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                limpiarResidenteActionPerformed(evt);
+                AR_CleanButtonActionPerformed(evt);
             }
         });
 
@@ -143,24 +150,24 @@ public class Condominio extends javax.swing.JFrame {
                 .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Añadir_ResidenteLayout.createSequentialGroup()
                         .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel6))
+                            .addComponent(AR_PasswordLabel)
+                            .addComponent(AR_UsernameLabel))
                         .addGap(26, 26, 26)
                         .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AR_usernameTB)
-                            .addComponent(AR_passwordTB)))
+                            .addComponent(AR_UsernameText)
+                            .addComponent(AR_PasswordText)))
                     .addGroup(Añadir_ResidenteLayout.createSequentialGroup()
                         .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel5))
+                            .addComponent(AR_NameLabel)
+                            .addComponent(AR_IDLabel))
                         .addGap(33, 33, 33)
                         .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AR_idTB)
-                            .addComponent(AR_fullnameTB)))
+                            .addComponent(AR_IDText)
+                            .addComponent(AR_NameText)))
                     .addGroup(Añadir_ResidenteLayout.createSequentialGroup()
-                        .addComponent(AR_addResBT)
+                        .addComponent(AR_AddUserButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(limpiarResidente)))
+                        .addComponent(AR_CleanButton)))
                 .addContainerGap())
         );
         Añadir_ResidenteLayout.setVerticalGroup(
@@ -168,48 +175,48 @@ public class Condominio extends javax.swing.JFrame {
             .addGroup(Añadir_ResidenteLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(AR_fullnameTB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AR_NameLabel)
+                    .addComponent(AR_NameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(AR_idTB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AR_IDLabel)
+                    .addComponent(AR_IDText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(AR_usernameTB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AR_UsernameLabel)
+                    .addComponent(AR_UsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(AR_passwordTB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AR_PasswordLabel)
+                    .addComponent(AR_PasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 24, Short.MAX_VALUE)
                 .addGroup(Añadir_ResidenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(limpiarResidente)
-                    .addComponent(AR_addResBT))
+                    .addComponent(AR_CleanButton)
+                    .addComponent(AR_AddUserButton))
                 .addContainerGap())
         );
 
         Añadir_Cuotas.setBorder(javax.swing.BorderFactory.createTitledBorder("Añadir Cuotas"));
 
-        jLabel13.setText("Residente:");
+        AC_ResidentLabel.setText("Residente:");
 
-        jLabel14.setText("Vivienda:");
+        AC_HomeLabel.setText("Vivienda:");
 
-        jLabel15.setText("Valor Cuota:");
+        AC_QuotaValueLabel.setText("Valor Cuota:");
 
-        jTextField1.setEditable(false);
+        AC_QuotaValueText.setEditable(false);
 
-        addCuota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
-        addCuota.setText("Añadir");
-        addCuota.setToolTipText("");
+        AC_QuotaAddButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
+        AC_QuotaAddButton.setText("Añadir");
+        AC_QuotaAddButton.setToolTipText("");
 
-        jLabel17.setText("Fecha de la Cuota (dd/mm/aa)");
-        jLabel17.setToolTipText("");
+        AC_QuotaDateLabel.setText("Fecha de la Cuota (dd/mm/aa)");
+        AC_QuotaDateLabel.setToolTipText("");
 
-        AR_ACDateField.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter()));
-        AR_ACDateField.addActionListener(new java.awt.event.ActionListener() {
+        AC_QuotaDateText.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter()));
+        AC_QuotaDateText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AR_ACDateFieldActionPerformed(evt);
+                AC_QuotaDateTextActionPerformed(evt);
             }
         });
 
@@ -222,53 +229,53 @@ public class Condominio extends javax.swing.JFrame {
                 .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Añadir_CuotasLayout.createSequentialGroup()
                         .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel14))
+                            .addComponent(AC_ResidentLabel)
+                            .addComponent(AC_HomeLabel))
                         .addGap(33, 33, 33)
                         .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RA_ViviendaCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(RA_ResCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(AC_HomeList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AC_ResidentList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(Añadir_CuotasLayout.createSequentialGroup()
-                        .addComponent(jLabel17)
+                        .addComponent(AC_QuotaDateLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(AR_ACDateField, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(AC_QuotaDateText, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Añadir_CuotasLayout.createSequentialGroup()
-                        .addComponent(jLabel15)
+                        .addComponent(AC_QuotaValueLabel)
                         .addGap(18, 18, 18)
                         .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AC_QuotaValueText)
                             .addGroup(Añadir_CuotasLayout.createSequentialGroup()
-                                .addComponent(addCuota)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jTextField1))))
+                                .addComponent(AC_QuotaAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         Añadir_CuotasLayout.setVerticalGroup(
             Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Añadir_CuotasLayout.createSequentialGroup()
                 .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(RA_ResCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(AC_ResidentList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AC_ResidentLabel))
+                .addGap(12, 12, 12)
                 .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(RA_ViviendaCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14))
-                .addGap(18, 18, 18)
-                .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
-                    .addComponent(AR_ACDateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AC_HomeList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AC_HomeLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(addCuota)
-                .addContainerGap(14, Short.MAX_VALUE))
+                    .addComponent(AC_QuotaDateLabel)
+                    .addComponent(AC_QuotaDateText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Añadir_CuotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AC_QuotaValueLabel)
+                    .addComponent(AC_QuotaValueText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(AC_QuotaAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
-        AR_slowpayerTA.setColumns(20);
-        AR_slowpayerTA.setRows(5);
-        AR_slowpayerTA.setBorder(javax.swing.BorderFactory.createTitledBorder("Residentes Morosos"));
-        jScrollPane2.setViewportView(AR_slowpayerTA);
+        SlowPayerTextArea.setColumns(20);
+        SlowPayerTextArea.setRows(5);
+        SlowPayerTextArea.setBorder(javax.swing.BorderFactory.createTitledBorder("Residentes Morosos"));
+        SlowPayerScroller.setViewportView(SlowPayerTextArea);
 
         javax.swing.GroupLayout ResAdminLayout = new javax.swing.GroupLayout(ResAdmin);
         ResAdmin.setLayout(ResAdminLayout);
@@ -280,7 +287,7 @@ public class Condominio extends javax.swing.JFrame {
                     .addComponent(Añadir_Residente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Añadir_Cuotas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 407, Short.MAX_VALUE)
+                .addComponent(SlowPayerScroller, javax.swing.GroupLayout.DEFAULT_SIZE, 407, Short.MAX_VALUE)
                 .addContainerGap())
         );
         ResAdminLayout.setVerticalGroup(
@@ -292,7 +299,7 @@ public class Condominio extends javax.swing.JFrame {
                         .addComponent(Añadir_Residente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Añadir_Cuotas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jScrollPane2))
+                    .addComponent(SlowPayerScroller))
                 .addContainerGap())
         );
 
@@ -302,13 +309,13 @@ public class Condominio extends javax.swing.JFrame {
 
         Añadir_ÁreaComún.setBorder(javax.swing.BorderFactory.createTitledBorder("Añadir Área Común"));
 
-        jLabel4.setText("Área común:");
+        AAC_AddCommonAreaLabel.setText("Área común:");
 
-        CA_AddAreaBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
-        CA_AddAreaBT.setText("Agregar");
-        CA_AddAreaBT.addActionListener(new java.awt.event.ActionListener() {
+        AAC_AddCommonAreaBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
+        AAC_AddCommonAreaBT.setText("Agregar");
+        AAC_AddCommonAreaBT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CA_AddAreaBTActionPerformed(evt);
+                AAC_AddCommonAreaBTActionPerformed(evt);
             }
         });
 
@@ -317,61 +324,54 @@ public class Condominio extends javax.swing.JFrame {
         Añadir_ÁreaComúnLayout.setHorizontalGroup(
             Añadir_ÁreaComúnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Añadir_ÁreaComúnLayout.createSequentialGroup()
-                .addGroup(Añadir_ÁreaComúnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Añadir_ÁreaComúnLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtArea, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE))
-                    .addGroup(Añadir_ÁreaComúnLayout.createSequentialGroup()
-                        .addGap(124, 124, 124)
-                        .addComponent(jLabel4)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(Añadir_ÁreaComúnLayout.createSequentialGroup()
-                .addGap(111, 111, 111)
-                .addComponent(CA_AddAreaBT)
+                .addContainerGap()
+                .addComponent(AAC_AddCommonAreaLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(AAC_AddCommonAreaText, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(AAC_AddCommonAreaBT)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Añadir_ÁreaComúnLayout.setVerticalGroup(
             Añadir_ÁreaComúnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Añadir_ÁreaComúnLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel4)
-                .addGap(30, 30, 30)
-                .addComponent(txtArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(CA_AddAreaBT)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(Añadir_ÁreaComúnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AAC_AddCommonAreaLabel)
+                    .addComponent(AAC_AddCommonAreaText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AAC_AddCommonAreaBT))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Añadir_Vivienda.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Añadir Vivienda", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.DEFAULT_POSITION));
 
-        jLabel8.setText("Número de la vivienda:");
+        AV_HomeIDLabel.setText("Número de la vivienda:");
 
-        jLabel9.setText("Tipo de Vivienda:");
+        AV_HomeTypeLabel.setText("Tipo de Vivienda:");
 
-        CA_HouseTypeCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "A", "B", "C" }));
+        AV_HomeTypeList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "A", "B", "C" }));
 
-        jLabel10.setText("Recargo:");
+        AV_SlowpayerChargeLabel.setText("Recargo:");
 
-        CA_RecargoTB.setEditable(false);
-        CA_RecargoTB.setEnabled(false);
+        AV_SlowpayerChargeText.setEditable(false);
+        AV_SlowpayerChargeText.setEnabled(false);
 
-        CA_Add_ViviendaBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/diskette.png"))); // NOI18N
-        CA_Add_ViviendaBT.setText("Guardar");
-        CA_Add_ViviendaBT.addActionListener(new java.awt.event.ActionListener() {
+        AV_AddHomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/diskette.png"))); // NOI18N
+        AV_AddHomeButton.setText("Guardar");
+        AV_AddHomeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CA_Add_ViviendaBTActionPerformed(evt);
+                AV_AddHomeButtonActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Residente:");
+        AV_ResidentLabel.setText("Residente:");
 
-        jLabel11.setText("Valor de la cuota mensual:");
+        AV_QuotaValueLabel.setText("Valor de la cuota mensual:");
 
-        CA_VrCuotaTB.setEditable(false);
-        CA_VrCuotaTB.setEnabled(false);
+        AV_QuotaValueText.setEditable(false);
+        AV_QuotaValueText.setEnabled(false);
 
-        CA_AV_ResCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ninguno" }));
+        AV_ResidentList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ninguno" }));
 
         javax.swing.GroupLayout Añadir_ViviendaLayout = new javax.swing.GroupLayout(Añadir_Vivienda);
         Añadir_Vivienda.setLayout(Añadir_ViviendaLayout);
@@ -381,69 +381,69 @@ public class Condominio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Añadir_ViviendaLayout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(AV_ResidentLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                        .addComponent(CA_AV_ResCB, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(AV_ResidentList, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Añadir_ViviendaLayout.createSequentialGroup()
                         .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11))
+                            .addComponent(AV_HomeIDLabel)
+                            .addComponent(AV_HomeTypeLabel)
+                            .addComponent(AV_SlowpayerChargeLabel)
+                            .addComponent(AV_QuotaValueLabel))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(CA_numViviendaTB)
-                            .addComponent(CA_HouseTypeCB, 0, 117, Short.MAX_VALUE)
-                            .addComponent(CA_RecargoTB)
-                            .addComponent(CA_VrCuotaTB))
+                            .addComponent(AV_HomeIDText)
+                            .addComponent(AV_HomeTypeList, 0, 117, Short.MAX_VALUE)
+                            .addComponent(AV_SlowpayerChargeText)
+                            .addComponent(AV_QuotaValueText))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Añadir_ViviendaLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CA_Add_ViviendaBT)
-                .addGap(111, 111, 111))
+            .addGroup(Añadir_ViviendaLayout.createSequentialGroup()
+                .addGap(107, 107, 107)
+                .addComponent(AV_AddHomeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Añadir_ViviendaLayout.setVerticalGroup(
             Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Añadir_ViviendaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CA_AV_ResCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AV_ResidentLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AV_ResidentList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(CA_numViviendaTB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AV_HomeIDLabel)
+                    .addComponent(AV_HomeIDText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CA_HouseTypeCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
+                    .addComponent(AV_HomeTypeList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AV_HomeTypeLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(CA_RecargoTB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AV_SlowpayerChargeLabel)
+                    .addComponent(AV_SlowpayerChargeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(Añadir_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(CA_VrCuotaTB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AV_QuotaValueLabel)
+                    .addComponent(AV_QuotaValueText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(CA_Add_ViviendaBT)
+                .addComponent(AV_AddHomeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Asignar_Vivienda.setBorder(javax.swing.BorderFactory.createTitledBorder("Asignar Vivienda"));
 
-        jLabel1.setText("Residente:");
+        AsV_ResidentLabel.setText("Residente:");
 
-        jLabel12.setText("Vivienda:");
+        AsV_HomeLabel.setText("Vivienda:");
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
         jButton1.setText("Asignar");
         jButton1.setToolTipText("");
 
-        jTextField2.setEditable(false);
+        AsV_QuotaValueText.setEditable(false);
 
-        jLabel16.setText("Valor Cuotas");
+        AsV_QuotaValueLabel.setText("Valor Cuotas");
 
         javax.swing.GroupLayout Asignar_ViviendaLayout = new javax.swing.GroupLayout(Asignar_Vivienda);
         Asignar_Vivienda.setLayout(Asignar_ViviendaLayout);
@@ -452,42 +452,96 @@ public class Condominio extends javax.swing.JFrame {
             .addGroup(Asignar_ViviendaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(Asignar_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel16))
+                    .addComponent(AsV_ResidentLabel)
+                    .addComponent(AsV_HomeLabel)
+                    .addComponent(AsV_QuotaValueLabel))
                 .addGap(18, 18, 18)
                 .addGroup(Asignar_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(CA_ASV_ResCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(CA_ASV_ViviendaCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AsV_ResidentList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AsV_HomeList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(Asignar_ViviendaLayout.createSequentialGroup()
-                        .addGroup(Asignar_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(AsV_QuotaValueText, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 130, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Asignar_ViviendaLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(127, 127, 127))
         );
         Asignar_ViviendaLayout.setVerticalGroup(
             Asignar_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Asignar_ViviendaLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(Asignar_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CA_ASV_ResCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(AsV_ResidentList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AsV_ResidentLabel))
                 .addGap(18, 18, 18)
                 .addGroup(Asignar_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CA_ASV_ViviendaCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
+                    .addComponent(AsV_HomeList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AsV_HomeLabel))
                 .addGap(18, 18, 18)
                 .addGroup(Asignar_ViviendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addGap(6, 6, 6))
+                    .addComponent(AsV_QuotaValueText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AsV_QuotaValueLabel))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jList1.setBorder(javax.swing.BorderFactory.createTitledBorder("Viviendas Disponibles"));
-        jScrollPane1.setViewportView(jList1);
+        AvailableHomeList.setBorder(javax.swing.BorderFactory.createTitledBorder("Viviendas Disponibles"));
+        AvailableHomeScroller.setViewportView(AvailableHomeList);
+
+        AvailableAreaList.setBorder(javax.swing.BorderFactory.createTitledBorder("Áreas Comunes Disponibles"));
+        AvailableAreaScroller.setViewportView(AvailableAreaList);
+
+        Cambiar_DatosAcceso.setBorder(javax.swing.BorderFactory.createTitledBorder("Cambiar Datos de Acceso"));
+
+        CDA_NewUsernameLabel.setText("Nuevo Usuario:");
+
+        CDA_NewPasswordLabel.setText("Nueva Contraseña:");
+
+        CDA_ChangeAccessDataButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/plus.png"))); // NOI18N
+        CDA_ChangeAccessDataButton.setText("Cambiar");
+        CDA_ChangeAccessDataButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CDA_ChangeAccessDataButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Cambiar_DatosAccesoLayout = new javax.swing.GroupLayout(Cambiar_DatosAcceso);
+        Cambiar_DatosAcceso.setLayout(Cambiar_DatosAccesoLayout);
+        Cambiar_DatosAccesoLayout.setHorizontalGroup(
+            Cambiar_DatosAccesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Cambiar_DatosAccesoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Cambiar_DatosAccesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(CDA_NewPasswordLabel)
+                    .addComponent(CDA_NewUsernameLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(Cambiar_DatosAccesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(CDA_NewUsernameText, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+                    .addComponent(CDA_NewPasswordText))
+                .addContainerGap())
+            .addGroup(Cambiar_DatosAccesoLayout.createSequentialGroup()
+                .addGap(99, 99, 99)
+                .addComponent(CDA_ChangeAccessDataButton, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Cambiar_DatosAccesoLayout.setVerticalGroup(
+            Cambiar_DatosAccesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Cambiar_DatosAccesoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Cambiar_DatosAccesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CDA_NewUsernameLabel)
+                    .addComponent(CDA_NewUsernameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(Cambiar_DatosAccesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CDA_NewPasswordLabel)
+                    .addComponent(CDA_NewPasswordText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(CDA_ChangeAccessDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout CondAdminLayout = new javax.swing.GroupLayout(CondAdmin);
         CondAdmin.setLayout(CondAdminLayout);
@@ -497,11 +551,13 @@ public class Condominio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(CondAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Añadir_Vivienda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Añadir_ÁreaComún, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Añadir_ÁreaComún, javax.swing.GroupLayout.PREFERRED_SIZE, 345, Short.MAX_VALUE)
+                    .addComponent(Cambiar_DatosAcceso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(CondAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Asignar_Vivienda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1))
+                    .addComponent(AvailableHomeScroller)
+                    .addComponent(AvailableAreaScroller))
                 .addContainerGap())
         );
         CondAdminLayout.setVerticalGroup(
@@ -512,11 +568,16 @@ public class Condominio extends javax.swing.JFrame {
                     .addGroup(CondAdminLayout.createSequentialGroup()
                         .addComponent(Asignar_Vivienda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1))
+                        .addComponent(AvailableHomeScroller, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(AvailableAreaScroller, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(CondAdminLayout.createSequentialGroup()
                         .addComponent(Añadir_Vivienda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Añadir_ÁreaComún, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(Añadir_ÁreaComún, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Cambiar_DatosAcceso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -539,47 +600,51 @@ public class Condominio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CA_Add_ViviendaBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CA_Add_ViviendaBTActionPerformed
+    private void AV_AddHomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AV_AddHomeButtonActionPerformed
 
-    }//GEN-LAST:event_CA_Add_ViviendaBTActionPerformed
+    }//GEN-LAST:event_AV_AddHomeButtonActionPerformed
 
-    private void CA_AddAreaBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CA_AddAreaBTActionPerformed
+    private void AAC_AddCommonAreaBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AAC_AddCommonAreaBTActionPerformed
 
-        nombreAC = txtArea.getText();
+        nombreAC = AAC_AddCommonAreaText.getText();
         estado = "Disponible";
         Areas_Comunes.add(new AreaComun(nombreAC, estado));
         JOptionPane.showMessageDialog(rootPane, "Se ha añadido un área");
         escrituraArea();
         
-    }//GEN-LAST:event_CA_AddAreaBTActionPerformed
+    }//GEN-LAST:event_AAC_AddCommonAreaBTActionPerformed
 
-    private void limpiarResidenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpiarResidenteActionPerformed
-        this.AR_fullnameTB.setText("");
-        this.AR_idTB.setText("");
-        this.AR_usernameTB.setText("");
-        this.AR_passwordTB.setText("");
-    }//GEN-LAST:event_limpiarResidenteActionPerformed
+    private void AR_CleanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AR_CleanButtonActionPerformed
+        this.AR_NameText.setText("");
+        this.AR_IDText.setText("");
+        this.AR_UsernameText.setText("");
+        this.AR_PasswordText.setText("");
+    }//GEN-LAST:event_AR_CleanButtonActionPerformed
 
-    private void AR_addResBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AR_addResBTActionPerformed
+    private void AR_AddUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AR_AddUserButtonActionPerformed
         // TODO add your handling code here:
 
-        nombre = AR_fullnameTB.getText();
-        cedula = AR_idTB.getText();
-        username = AR_usernameTB.getText();
-        password = AR_passwordTB.getText();
+        nombre = AR_NameText.getText();
+        cedula = AR_IDText.getText();
+        username = AR_UsernameText.getText();
+        password = AR_PasswordText.getText();
         Residentes.add(new Residente(nombre, cedula, username, password));
-        AR_fullnameTB.setText("");
-        AR_idTB.setText("");
-        AR_usernameTB.setText("");
-        AR_passwordTB.setText("");
+        AR_NameText.setText("");
+        AR_IDText.setText("");
+        AR_UsernameText.setText("");
+        AR_PasswordText.setText("");
         escribirResidentes();
 
         JOptionPane.showMessageDialog(rootPane, "Se ha añadido un usuario");
-    }//GEN-LAST:event_AR_addResBTActionPerformed
+    }//GEN-LAST:event_AR_AddUserButtonActionPerformed
 
-    private void AR_ACDateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AR_ACDateFieldActionPerformed
+    private void AC_QuotaDateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AC_QuotaDateTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_AR_ACDateFieldActionPerformed
+    }//GEN-LAST:event_AC_QuotaDateTextActionPerformed
+
+    private void CDA_ChangeAccessDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CDA_ChangeAccessDataButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CDA_ChangeAccessDataButtonActionPerformed
 
 
     public void recuperacionArea() {
@@ -656,66 +721,73 @@ public class Condominio extends javax.swing.JFrame {
     public void initListaMorosos(){
         for(Residente res: Residentes){
             if(res.getMoroso() == true){
-            AR_slowpayerTA.append(res.toString() + "\n");
+            SlowPayerTextArea.append(res.toString() + "\n");
             }
         }
     }
     
 // <editor-fold desc="trash-code">
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JFormattedTextField AR_ACDateField;
-    private javax.swing.JButton AR_addResBT;
-    private javax.swing.JTextField AR_fullnameTB;
-    private javax.swing.JTextField AR_idTB;
-    private javax.swing.JPasswordField AR_passwordTB;
-    private javax.swing.JTextArea AR_slowpayerTA;
-    private javax.swing.JTextField AR_usernameTB;
+    private javax.swing.JButton AAC_AddCommonAreaBT;
+    private javax.swing.JLabel AAC_AddCommonAreaLabel;
+    private javax.swing.JTextField AAC_AddCommonAreaText;
+    private javax.swing.JLabel AC_HomeLabel;
+    private javax.swing.JComboBox<String> AC_HomeList;
+    private javax.swing.JButton AC_QuotaAddButton;
+    private javax.swing.JLabel AC_QuotaDateLabel;
+    private javax.swing.JFormattedTextField AC_QuotaDateText;
+    private javax.swing.JLabel AC_QuotaValueLabel;
+    private javax.swing.JTextField AC_QuotaValueText;
+    private javax.swing.JLabel AC_ResidentLabel;
+    private javax.swing.JComboBox<String> AC_ResidentList;
+    private javax.swing.JButton AR_AddUserButton;
+    private javax.swing.JButton AR_CleanButton;
+    private javax.swing.JLabel AR_IDLabel;
+    private javax.swing.JTextField AR_IDText;
+    private javax.swing.JLabel AR_NameLabel;
+    private javax.swing.JTextField AR_NameText;
+    private javax.swing.JLabel AR_PasswordLabel;
+    private javax.swing.JPasswordField AR_PasswordText;
+    private javax.swing.JLabel AR_UsernameLabel;
+    private javax.swing.JTextField AR_UsernameText;
+    private javax.swing.JButton AV_AddHomeButton;
+    private javax.swing.JLabel AV_HomeIDLabel;
+    private javax.swing.JTextField AV_HomeIDText;
+    private javax.swing.JLabel AV_HomeTypeLabel;
+    private javax.swing.JComboBox<String> AV_HomeTypeList;
+    private javax.swing.JLabel AV_QuotaValueLabel;
+    private javax.swing.JTextField AV_QuotaValueText;
+    private javax.swing.JLabel AV_ResidentLabel;
+    private javax.swing.JComboBox<String> AV_ResidentList;
+    private javax.swing.JLabel AV_SlowpayerChargeLabel;
+    private javax.swing.JTextField AV_SlowpayerChargeText;
+    private javax.swing.JLabel AsV_HomeLabel;
+    private javax.swing.JComboBox<String> AsV_HomeList;
+    private javax.swing.JLabel AsV_QuotaValueLabel;
+    private javax.swing.JTextField AsV_QuotaValueText;
+    private javax.swing.JLabel AsV_ResidentLabel;
+    private javax.swing.JComboBox<String> AsV_ResidentList;
     private javax.swing.JPanel Asignar_Vivienda;
+    private javax.swing.JList<String> AvailableAreaList;
+    private javax.swing.JScrollPane AvailableAreaScroller;
+    private javax.swing.JList<String> AvailableHomeList;
+    private javax.swing.JScrollPane AvailableHomeScroller;
     private javax.swing.JPanel Añadir_Cuotas;
     private javax.swing.JPanel Añadir_Residente;
     private javax.swing.JPanel Añadir_Vivienda;
     private javax.swing.JPanel Añadir_ÁreaComún;
-    private javax.swing.JComboBox<String> CA_ASV_ResCB;
-    private javax.swing.JComboBox<String> CA_ASV_ViviendaCB;
-    private javax.swing.JComboBox<String> CA_AV_ResCB;
-    private javax.swing.JButton CA_AddAreaBT;
-    private javax.swing.JButton CA_Add_ViviendaBT;
-    private javax.swing.JComboBox<String> CA_HouseTypeCB;
-    private javax.swing.JTextField CA_RecargoTB;
-    private javax.swing.JTextField CA_VrCuotaTB;
-    private javax.swing.JTextField CA_numViviendaTB;
+    private javax.swing.JButton CDA_ChangeAccessDataButton;
+    private javax.swing.JLabel CDA_NewPasswordLabel;
+    private javax.swing.JTextField CDA_NewPasswordText;
+    private javax.swing.JLabel CDA_NewUsernameLabel;
+    private javax.swing.JTextField CDA_NewUsernameText;
+    private javax.swing.JPanel Cambiar_DatosAcceso;
     private javax.swing.JPanel CondAdmin;
     private javax.swing.JTabbedPane CondControls;
-    private javax.swing.JComboBox<String> RA_ResCB;
-    private javax.swing.JComboBox<String> RA_ViviendaCB;
     private javax.swing.JPanel ResAdmin;
-    private javax.swing.JButton addCuota;
-    private javax.swing.ButtonGroup grupo_botones;
+    private javax.swing.JScrollPane SlowPayerScroller;
+    private javax.swing.JTextArea SlowPayerTextArea;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JButton limpiarResidente;
-    private javax.swing.JTextField txtArea;
     // End of variables declaration//GEN-END:variables
 //</editor-fold>
 } 

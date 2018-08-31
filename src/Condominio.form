@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <NonVisualComponents>
-    <Component class="javax.swing.ButtonGroup" name="grupo_botones">
-    </Component>
-  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -71,7 +67,7 @@
                           <Component id="Añadir_Cuotas" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" pref="407" max="32767" attributes="0"/>
+                      <Component id="SlowPayerScroller" pref="407" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -86,7 +82,7 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="Añadir_Cuotas" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane2" max="32767" attributes="0"/>
+                          <Component id="SlowPayerScroller" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -111,30 +107,30 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AR_PasswordLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AR_UsernameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="AR_usernameTB" max="32767" attributes="0"/>
-                                      <Component id="AR_passwordTB" max="32767" attributes="0"/>
+                                      <Component id="AR_UsernameText" max="32767" attributes="0"/>
+                                      <Component id="AR_PasswordText" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AR_NameLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AR_IDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="AR_idTB" max="32767" attributes="0"/>
-                                      <Component id="AR_fullnameTB" max="32767" attributes="0"/>
+                                      <Component id="AR_IDText" max="32767" attributes="0"/>
+                                      <Component id="AR_NameText" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="AR_addResBT" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AR_AddUserButton" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="limpiarResidente" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AR_CleanButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -146,28 +142,28 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AR_fullnameTB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_NameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_NameText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AR_idTB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_IDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_IDText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AR_usernameTB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_UsernameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_UsernameText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AR_passwordTB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_PasswordLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_PasswordText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" pref="24" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="limpiarResidente" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AR_addResBT" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_CleanButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AR_AddUserButton" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -175,35 +171,35 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel2">
+                <Component class="javax.swing.JLabel" name="AR_NameLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Nombre Completo:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="AR_fullnameTB">
+                <Component class="javax.swing.JTextField" name="AR_NameText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel5">
+                <Component class="javax.swing.JLabel" name="AR_IDLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="N&#xfa;mero de C&#xe9;dula:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="AR_idTB">
+                <Component class="javax.swing.JTextField" name="AR_IDText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel7">
+                <Component class="javax.swing.JLabel" name="AR_PasswordLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JPasswordField" name="AR_passwordTB">
+                <Component class="javax.swing.JPasswordField" name="AR_PasswordText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel6">
+                <Component class="javax.swing.JLabel" name="AR_UsernameLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Nombre de Usuario:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="AR_usernameTB">
+                <Component class="javax.swing.JTextField" name="AR_UsernameText">
                 </Component>
-                <Component class="javax.swing.JButton" name="AR_addResBT">
+                <Component class="javax.swing.JButton" name="AR_AddUserButton">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/imagenes/plus.png"/>
@@ -211,10 +207,10 @@
                     <Property name="text" type="java.lang.String" value="Agregar"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AR_addResBTActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AR_AddUserButtonActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="limpiarResidente">
+                <Component class="javax.swing.JButton" name="AR_CleanButton">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/imagenes/broom.png"/>
@@ -222,7 +218,7 @@
                     <Property name="text" type="java.lang.String" value="Limpiar"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="limpiarResidenteActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AR_CleanButtonActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -244,29 +240,29 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AC_ResidentLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AC_HomeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="RA_ViviendaCB" max="32767" attributes="0"/>
-                                      <Component id="RA_ResCB" max="32767" attributes="0"/>
+                                      <Component id="AC_HomeList" max="32767" attributes="0"/>
+                                      <Component id="AC_ResidentList" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AC_QuotaDateLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="AR_ACDateField" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <Component id="AC_QuotaDateText" min="-2" pref="103" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AC_QuotaValueLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="AC_QuotaValueText" max="32767" attributes="0"/>
                                       <Group type="102" attributes="0">
-                                          <Component id="addCuota" min="-2" max="-2" attributes="0"/>
+                                          <Component id="AC_QuotaAddButton" min="-2" pref="108" max="-2" attributes="0"/>
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="jTextField1" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -278,38 +274,38 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="RA_ResCB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AC_ResidentList" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AC_ResidentLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="RA_ViviendaCB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AR_ACDateField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AC_HomeList" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AC_HomeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AC_QuotaDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AC_QuotaDateText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="addCuota" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="14" max="32767" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="AC_QuotaValueLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AC_QuotaValueText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="AC_QuotaAddButton" pref="41" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel13">
+                <Component class="javax.swing.JLabel" name="AC_ResidentLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Residente:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="RA_ResCB">
+                <Component class="javax.swing.JComboBox" name="AC_ResidentList">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="0"/>
@@ -319,7 +315,7 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="RA_ViviendaCB">
+                <Component class="javax.swing.JComboBox" name="AC_HomeList">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="0"/>
@@ -329,22 +325,22 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel14">
+                <Component class="javax.swing.JLabel" name="AC_HomeLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Vivienda:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel15">
+                <Component class="javax.swing.JLabel" name="AC_QuotaValueLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Valor Cuota:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField1">
+                <Component class="javax.swing.JTextField" name="AC_QuotaValueText">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="addCuota">
+                <Component class="javax.swing.JButton" name="AC_QuotaAddButton">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/imagenes/plus.png"/>
@@ -353,32 +349,32 @@
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel17">
+                <Component class="javax.swing.JLabel" name="AC_QuotaDateLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Fecha de la Cuota (dd/mm/aa)"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="AR_ACDateField">
+                <Component class="javax.swing.JFormattedTextField" name="AC_QuotaDateText">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format subtype="0" type="1"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AR_ACDateFieldActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AC_QuotaDateTextActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+            <Container class="javax.swing.JScrollPane" name="SlowPayerScroller">
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
               </AuxValues>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTextArea" name="AR_slowpayerTA">
+                <Component class="javax.swing.JTextArea" name="SlowPayerTextArea">
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
@@ -414,12 +410,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="Añadir_Vivienda" max="32767" attributes="0"/>
-                          <Component id="Añadir_ÁreaComún" max="32767" attributes="0"/>
+                          <Component id="Añadir_ÁreaComún" pref="345" max="32767" attributes="0"/>
+                          <Component id="Cambiar_DatosAcceso" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="Asignar_Vivienda" max="32767" attributes="0"/>
-                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                          <Component id="AvailableHomeScroller" max="32767" attributes="0"/>
+                          <Component id="AvailableAreaScroller" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -430,15 +428,20 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="Asignar_Vivienda" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" max="32767" attributes="0"/>
+                              <Component id="AvailableHomeScroller" min="-2" pref="171" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="AvailableAreaScroller" min="-2" pref="177" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="Añadir_Vivienda" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Añadir_ÁreaComún" max="32767" attributes="0"/>
+                              <Component id="Añadir_ÁreaComún" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Cambiar_DatosAcceso" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -463,22 +466,12 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtArea" pref="311" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                          <Component id="CA_AddAreaBT" min="-2" max="-2" attributes="0"/>
+                          <Component id="AAC_AddCommonAreaLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="AAC_AddCommonAreaText" min="-2" pref="137" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="AAC_AddCommonAreaBT" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -486,26 +479,26 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="txtArea" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="CA_AddAreaBT" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="41" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="AAC_AddCommonAreaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AAC_AddCommonAreaText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AAC_AddCommonAreaBT" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel4">
+                <Component class="javax.swing.JLabel" name="AAC_AddCommonAreaLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="&#xc1;rea com&#xfa;n:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtArea">
+                <Component class="javax.swing.JTextField" name="AAC_AddCommonAreaText">
                 </Component>
-                <Component class="javax.swing.JButton" name="CA_AddAreaBT">
+                <Component class="javax.swing.JButton" name="AAC_AddCommonAreaBT">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/imagenes/plus.png"/>
@@ -513,7 +506,7 @@
                     <Property name="text" type="java.lang.String" value="Agregar"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CA_AddAreaBTActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AAC_AddCommonAreaBTActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -537,33 +530,33 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel3" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="AV_ResidentLabel" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace pref="40" max="32767" attributes="0"/>
-                                  <Component id="CA_AV_ResCB" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="AV_ResidentList" min="-2" pref="200" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AV_HomeIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AV_HomeTypeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AV_SlowpayerChargeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AV_QuotaValueLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="CA_numViviendaTB" max="32767" attributes="0"/>
-                                      <Component id="CA_HouseTypeCB" pref="117" max="32767" attributes="0"/>
-                                      <Component id="CA_RecargoTB" max="32767" attributes="0"/>
-                                      <Component id="CA_VrCuotaTB" max="32767" attributes="0"/>
+                                      <Component id="AV_HomeIDText" max="32767" attributes="0"/>
+                                      <Component id="AV_HomeTypeList" pref="117" max="32767" attributes="0"/>
+                                      <Component id="AV_SlowpayerChargeText" max="32767" attributes="0"/>
+                                      <Component id="AV_QuotaValueText" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                          <Component id="AV_AddHomeButton" min="-2" pref="115" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="CA_Add_ViviendaBT" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -572,50 +565,50 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel3" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                              <Component id="CA_AV_ResCB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_ResidentLabel" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="AV_ResidentList" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="CA_numViviendaTB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_HomeIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_HomeIDText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="CA_HouseTypeCB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_HomeTypeList" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_HomeTypeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="CA_RecargoTB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_SlowpayerChargeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_SlowpayerChargeText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="CA_VrCuotaTB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_QuotaValueLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AV_QuotaValueText" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="CA_Add_ViviendaBT" min="-2" max="-2" attributes="0"/>
+                          <Component id="AV_AddHomeButton" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel8">
+                <Component class="javax.swing.JLabel" name="AV_HomeIDLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="N&#xfa;mero de la vivienda:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="CA_numViviendaTB">
+                <Component class="javax.swing.JTextField" name="AV_HomeIDText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel9">
+                <Component class="javax.swing.JLabel" name="AV_HomeTypeLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Tipo de Vivienda:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="CA_HouseTypeCB">
+                <Component class="javax.swing.JComboBox" name="AV_HomeTypeList">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="4">
@@ -630,18 +623,18 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel10">
+                <Component class="javax.swing.JLabel" name="AV_SlowpayerChargeLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Recargo:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="CA_RecargoTB">
+                <Component class="javax.swing.JTextField" name="AV_SlowpayerChargeText">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="CA_Add_ViviendaBT">
+                <Component class="javax.swing.JButton" name="AV_AddHomeButton">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/imagenes/diskette.png"/>
@@ -649,26 +642,26 @@
                     <Property name="text" type="java.lang.String" value="Guardar"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CA_Add_ViviendaBTActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AV_AddHomeButtonActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel3">
+                <Component class="javax.swing.JLabel" name="AV_ResidentLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Residente:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel11">
+                <Component class="javax.swing.JLabel" name="AV_QuotaValueLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Valor de la cuota mensual:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="CA_VrCuotaTB">
+                <Component class="javax.swing.JTextField" name="AV_QuotaValueText">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="CA_AV_ResCB">
+                <Component class="javax.swing.JComboBox" name="AV_ResidentList">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="1">
@@ -697,58 +690,60 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="AsV_ResidentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="AsV_HomeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="AsV_QuotaValueLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="CA_ASV_ResCB" max="32767" attributes="0"/>
-                              <Component id="CA_ASV_ViviendaCB" max="32767" attributes="0"/>
+                              <Component id="AsV_ResidentList" max="32767" attributes="0"/>
+                              <Component id="AsV_HomeList" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextField2" min="-2" pref="141" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="AsV_QuotaValueText" min="-2" pref="141" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="130" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jButton1" min="-2" pref="116" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="AsV_ResidentList" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AsV_ResidentLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="AsV_HomeList" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AsV_HomeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="AsV_QuotaValueText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AsV_QuotaValueLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jButton1" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="CA_ASV_ResCB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="CA_ASV_ViviendaCB" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel1">
+                <Component class="javax.swing.JLabel" name="AsV_ResidentLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Residente:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="CA_ASV_ResCB">
+                <Component class="javax.swing.JComboBox" name="AsV_ResidentList">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="0"/>
@@ -758,12 +753,12 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel12">
+                <Component class="javax.swing.JLabel" name="AsV_HomeLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Vivienda:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="CA_ASV_ViviendaCB">
+                <Component class="javax.swing.JComboBox" name="AsV_HomeList">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="0"/>
@@ -782,26 +777,26 @@
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField2">
+                <Component class="javax.swing.JTextField" name="AsV_QuotaValueText">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel16">
+                <Component class="javax.swing.JLabel" name="AsV_QuotaValueLabel">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Valor Cuotas"/>
                   </Properties>
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+            <Container class="javax.swing.JScrollPane" name="AvailableHomeScroller">
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
               </AuxValues>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JList" name="jList1">
+                <Component class="javax.swing.JList" name="AvailableHomeList">
                   <Properties>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -815,6 +810,110 @@
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="AvailableAreaScroller">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="AvailableAreaList">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="&#xc1;reas Comunes Disponibles"/>
+                      </Border>
+                    </Property>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="Cambiar_DatosAcceso">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Cambiar Datos de Acceso"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="CDA_NewPasswordLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="CDA_NewUsernameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="CDA_NewUsernameText" pref="146" max="32767" attributes="0"/>
+                              <Component id="CDA_NewPasswordText" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                          <Component id="CDA_ChangeAccessDataButton" min="-2" pref="129" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="CDA_NewUsernameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CDA_NewUsernameText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="CDA_NewPasswordLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CDA_NewPasswordText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="CDA_ChangeAccessDataButton" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="CDA_NewUsernameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Nuevo Usuario:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="CDA_NewPasswordLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Nueva Contrase&#xf1;a:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CDA_NewUsernameText">
+                </Component>
+                <Component class="javax.swing.JTextField" name="CDA_NewPasswordText">
+                </Component>
+                <Component class="javax.swing.JButton" name="CDA_ChangeAccessDataButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/plus.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Cambiar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CDA_ChangeAccessDataButtonActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
